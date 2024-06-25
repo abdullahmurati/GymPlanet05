@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="membershimlogin.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+          <img src="Gym Planet 05-logos_black.png" alt="Gym Planet Logo" height="50">
+        </a>
+        <nav>
+          <ul id="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="membershiplogin.html">Login Membership</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div class="fotogym102018">
+      <img src="Gym Planet 05-logos_black.png" height="230px" width="230px">
+</div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Login In</h2>
+                <p id="result"></p>
+                
+                <div class="input-box">
+                    <box-icon name='envelope' ></box-icon>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <box-icon name='lock-alt' ></box-icon>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Login">
+                </div>
+                
+            </form>
+        </div>
+</body>
+</html>

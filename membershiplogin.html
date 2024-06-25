@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="membershimlogin.css">
+    
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+          <img src="Gym Planet 05-logos_black.png" alt="Gym Planet Logo" height="50">
+        </a>
+        <nav>
+          <ul id="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="membershiplogin.html">Login Membership</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    
+
+
+
+
+
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <p id="result">Fill the blank</p>
+                    <box-icon name='user-circle' type='solid' ></box-icon>
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <box-icon name='envelope' ></box-icon>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <box-icon name='lock-alt' ></box-icon>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <box-icon name='lock-alt' ></box-icon>
+                    <input type="password" name="CPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Register">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="cslogin.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Thank you for choosing us!</h2>
+            <p>Your Registration Is Ready Now Go To the Membership Pack And Buy One</p>
+            <a href="cslogin.html"><button onclick="closeSlide()">OK</button></a>
+
+        </div>   
+    </div>
+ 
+    
+
+<script src="login.js"></script>    
+</body>
+</html>
